@@ -1,0 +1,23 @@
+# ── 受試者層級資料：一律不得進入公開庫（IRB CMUH114-REC3-142）────────────
+# Participant-level data must never enter this repository.
+*.npz            # out-of-fold predictions and group norms carry one row per participant
+*.csv
+*.xlsx
+*.xls
+02_data/
+static_output/
+cohort_audit*
+
+# 內部投影片與備份 / internal slides and backups
+*.pptx
+*.docx
+*.bak
+*.orig
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
