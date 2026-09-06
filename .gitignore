@@ -2,6 +2,7 @@
 # Participant-level data must never enter this repository.
 *.npz            # out-of-fold predictions and group norms carry one row per participant
 *.csv
+!simulation/outputs/26_site_freq_correspondence_table_channel_level.csv   # channel-level aggregates only (36 rows, no participants)
 *.xlsx
 *.xls
 02_data/

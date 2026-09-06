@@ -1,0 +1,80 @@
+{
+ "n": 134,
+ "n_muscles": 18,
+ "channels": 36,
+ "within_channel_corr_median": {
+  "r_RX": 0.903,
+  "r_RPhA": -0.075,
+  "r_XPhA": 0.432,
+  "r_RZ": 0.998,
+  "r_XZ": 0.928
+ },
+ "within_channel_corr_range": {
+  "r_RX": [
+   0.564,
+   0.971
+  ],
+  "r_RPhA": [
+   -0.591,
+   0.57
+  ],
+  "r_XPhA": [
+   0.005,
+   0.792
+  ],
+  "r_RZ": [
+   0.99,
+   1.0
+  ],
+  "r_XZ": [
+   0.651,
+   0.979
+  ]
+ },
+ "groups": [
+  "calf|100",
+  "calf|50",
+  "forearm|100",
+  "forearm|50",
+  "thigh|100",
+  "thigh|50",
+  "trunk|100",
+  "trunk|50",
+  "upper_arm|100",
+  "upper_arm|50"
+ ],
+ "p_RX": 72,
+ "abs_corr_within_group": {
+  "median": 0.721,
+  "q25": 0.497,
+  "q75": 0.863
+ },
+ "abs_corr_between_group": {
+  "median": 0.497,
+  "q25": 0.338,
+  "q75": 0.678
+ },
+ "feature_R2_on_demographics": {
+  "median": 0.397,
+  "q25": 0.237,
+  "q75": 0.514,
+  "max": 0.702
+ },
+ "abs_corr_feature_sex": {
+  "median": 0.555,
+  "max": 0.827
+ },
+ "abs_corr_within_group_residualized": 0.47,
+ "abs_corr_between_group_residualized": 0.282,
+ "grip_R2_demographics_insample": 0.616,
+ "grip_resid_sd": 6.49,
+ "grip_sd": 10.35,
+ "demographics": {
+  "p_male": 0.507,
+  "age_mean": 53.1,
+  "age_sd": 20.7,
+  "bmi_mean": 23.9,
+  "bmi_sd": 3.9
+ },
+ "missing_cells_RX": 66
+}

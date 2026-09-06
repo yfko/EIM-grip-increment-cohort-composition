@@ -1,0 +1,47 @@
+S3 真值（全族群）ΔMAE 0.462 ΔR² 0.068
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: divide by zero encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: overflow encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: invalid value encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: divide by zero encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: overflow encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: invalid value encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: divide by zero encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: overflow encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: invalid value encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: divide by zero encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: overflow encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: invalid value encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: divide by zero encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: overflow encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: invalid value encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: divide by zero encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: overflow encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+/Users/yfko/Library/Mobile Documents/com~apple~CloudDocs/Documents/New idea/EIM/stage2_audit/22_simulation.py:47: RuntimeWarning: invalid value encountered in matmul
+  y=intercept+b[0]*(D[:,0]-0.5)*2+b[1]*D[:,1]+b[2]*D[:,2]+u@gamma+rng.normal(0,eps,n)
+S3 500 reps 446s
+all|RX|LassoRaw {"n": 134.0, "dr2_mean": 0.046, "dmae_mean": 0.296, "false_null_dr2": 0.088, "false_null_dmae": 0.812, "ciw_dr2": 0.133, "cover_dmae_truthall": 0.794}
+all|RX|ENres {"n": 134.0, "dr2_mean": 0.053, "dmae_mean": 0.343, "false_null_dr2": 0.046, "false_null_dmae": 0.66, "ciw_dr2": 0.107, "cover_dmae_truthall": 0.768}
+all|RXPhA|LassoRaw {"n": 134.0, "dr2_mean": 0.036, "dmae_mean": 0.229, "false_null_dr2": 0.164, "false_null_dmae": 0.902, "ciw_dr2": 0.142, "cover_dmae_truthall": 0.762}
+all|RXPhA|ENres {"n": 134.0, "dr2_mean": 0.049, "dmae_mean": 0.32, "false_null_dr2": 0.06, "false_null_dmae": 0.642, "ciw_dr2": 0.102, "cover_dmae_truthall": 0.732}
+healthy|RX|LassoRaw {"n": 104.416, "dr2_mean": 0.03, "dmae_mean": 0.205, "false_null_dr2": 0.178, "false_null_dmae": 0.838, "ciw_dr2": 0.111, "cover_dmae_truthall": 0.612}
+healthy|RX|ENres {"n": 104.416, "dr2_mean": 0.036, "dmae_mean": 0.244, "false_null_dr2": 0.098, "false_null_dmae": 0.7, "ciw_dr2": 0.089, "cover_dmae_truthall": 0.564}
+healthy|RXPhA|LassoRaw {"n": 104.416, "dr2_mean": 0.021, "dmae_mean": 0.153, "false_null_dr2": 0.304, "false_null_dmae": 0.902, "ciw_dr2": 0.119, "cover_dmae_truthall": 0.586}
+healthy|RXPhA|ENres {"n": 104.416, "dr2_mean": 0.032, "dmae_mean": 0.222, "false_null_dr2": 0.124, "false_null_dmae": 0.73, "ciw_dr2": 0.084, "cover_dmae_truthall": 0.514}
+DONE exit=0

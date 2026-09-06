@@ -138,6 +138,24 @@ if "0" in TIERS.split(","):
 if "1a" in TIERS.split(","):
     mk=lambda s:Pipeline([("sc",StandardScaler()),("en",ElasticNetCV(l1_ratio=[.1,.3,.5,.7,.9],n_alphas=100,cv=inner(s),max_iter=50000,random_state=s))])
     p=oof_model(mk,FORE100,N_REP); PRED["1a_enet"]=p; RES["1a"]=row("1a Elastic net ★H1 主模型",len(FORE100),p,pb)
+# ── 1d/1e：全 72 特徵（去冗餘、殘差化）的 Lasso 與 elastic net —— 方法篇對照（2026-09-06 補跑）：
+#    使多部位 vs 單部位、SGL vs Lasso/EN 在同一特徵集上可比；設定與 1a 完全相同
+if "1d" in TIERS.split(","):
+    mk=lambda s:Pipeline([("sc",StandardScaler()),("las",LassoCV(alphas=np.logspace(-3,1,60),cv=inner(s),max_iter=50000,random_state=s))])
+    p=oof_model(mk,ALLCOLS,N_REP); PRED["1d_lasso72"]=p; RES["1d"]=row("1d Lasso 全 72 特徵 殘差化",len(ALLCOLS),p,pb)
+if "1e" in TIERS.split(","):
+    mk=lambda s:Pipeline([("sc",StandardScaler()),("en",ElasticNetCV(l1_ratio=[.1,.3,.5,.7,.9],n_alphas=100,cv=inner(s),max_iter=50000,random_state=s))])
+    p=oof_model(mk,ALLCOLS,N_REP); PRED["1e_enet72"]=p; RES["1e"]=row("1e Elastic net 全 72 特徵 殘差化",len(ALLCOLS),p,pb)
+if "1d" in TIERS.split(",") or "1e" in TIERS.split(","):
+    def paired(a,b,label):
+        dm=[]
+        for _ in range(N_BOOT):
+            bb=rng.choice(n,n,replace=True); dm.append(np.abs(y[bb]-PRED[a][bb]).mean()-np.abs(y[bb]-PRED[b][bb]).mean())
+        dm=np.array(dm); print(f"配對對比 {label}：MAE({a}) − MAE({b}) = {dm.mean():+.3f} [{np.percentile(dm,2.5):+.3f},{np.percentile(dm,97.5):+.3f}]  P({b} 較佳)={np.mean(dm>0):.3f}")
+        RES[f"contrast_{a}_minus_{b}"]=dict(dmae=dm.mean(),dmae_lo=np.percentile(dm,2.5),dmae_hi=np.percentile(dm,97.5),p_pos=float(np.mean(dm>0)))
+    print()
+    for a,b,lab in (("1a_enet","1d_lasso72","多部位 Lasso vs 前臂 EN"),("1a_enet","1e_enet72","多部位 EN vs 前臂 EN"),("1d_lasso72","1b_sgl","SGL vs 多部位 Lasso"),("1e_enet72","1b_sgl","SGL vs 多部位 EN")):
+        if a in PRED and b in PRED: paired(a,b,lab)
 if "1b" in TIERS.split(","):
     sel=[]
     GR=np.logspace(-3,0,5); LR=np.logspace(-3,0,5)

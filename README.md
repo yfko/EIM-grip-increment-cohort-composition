@@ -48,6 +48,11 @@ Scripts read the raw data from a local path that is not distributed; the cohort-
 comes from the companion reference-limit repository
 (`EIM-dual-frequency-reference-limits`, `cohort_audit.csv`, likewise not distributed).
 
+
+## Simulation study and site × frequency correspondence (methods paper, added 2026-09-06)
+
+`simulation/` holds the pre-registered simulation behind the companion methods paper (Lin & Ko, submitted to Physiological Measurement): `PREREGISTRATION_simulation_v1.4_zh-TW.md` (written before the formal runs; §6 logs the four amendments and names the superseded output files, which are retained in `simulation/outputs/`), `21_sim_calibration.py` (aggregate calibration targets from the development cohort; output `21_sim_calibration.json` contains no participant rows), `22_simulation.py` (S0 calibration, S1 redundancy, S2 group structure, S3 selection-on-outcome × redundancy × estimator × residualization), `24_sim_figures.py`, `26_site_freq_correspondence.py` (three importance methods vs the Stage 1 age effect, channel level) and `28_methods_figures.py`. Run logs with timestamps are in `simulation/outputs/`. `analysis/11_models.py` now includes tiers 1d/1e (all 72 residualized features, lasso and elastic net) and the paired contrasts.
+
 ## Reproducing the results
 
 ```bash

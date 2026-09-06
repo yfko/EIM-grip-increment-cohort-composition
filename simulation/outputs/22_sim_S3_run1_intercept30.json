@@ -1,0 +1,80 @@
+{
+ "truth_all": {
+  "dmae": 0.4616364589285151,
+  "dr2": 0.06803053635743939,
+  "r2_base": 0.4383444990431704
+ },
+ "reps": 500,
+ "all|RX|LassoRaw": {
+  "n": 134.0,
+  "dr2_mean": 0.04592197914955888,
+  "dmae_mean": 0.295615795086748,
+  "false_null_dr2": 0.088,
+  "false_null_dmae": 0.812,
+  "ciw_dr2": 0.13283732973509071,
+  "cover_dmae_truthall": 0.794
+ },
+ "all|RX|ENres": {
+  "n": 134.0,
+  "dr2_mean": 0.0527161906837309,
+  "dmae_mean": 0.343298978060237,
+  "false_null_dr2": 0.046,
+  "false_null_dmae": 0.66,
+  "ciw_dr2": 0.10702729561422859,
+  "cover_dmae_truthall": 0.768
+ },
+ "all|RXPhA|LassoRaw": {
+  "n": 134.0,
+  "dr2_mean": 0.03556221599866485,
+  "dmae_mean": 0.2293984963985136,
+  "false_null_dr2": 0.164,
+  "false_null_dmae": 0.902,
+  "ciw_dr2": 0.14244211028937753,
+  "cover_dmae_truthall": 0.762
+ },
+ "all|RXPhA|ENres": {
+  "n": 134.0,
+  "dr2_mean": 0.049156372009421995,
+  "dmae_mean": 0.31960037598198643,
+  "false_null_dr2": 0.06,
+  "false_null_dmae": 0.642,
+  "ciw_dr2": 0.10162076337378122,
+  "cover_dmae_truthall": 0.732
+ },
+ "healthy|RX|LassoRaw": {
+  "n": 78.928,
+  "dr2_mean": 0.01698131208695837,
+  "dmae_mean": 0.11290164805222455,
+  "false_null_dr2": 0.312,
+  "false_null_dmae": 0.952,
+  "ciw_dr2": 0.10717649742035325,
+  "cover_dmae_truthall": 0.498
+ },
+ "healthy|RX|ENres": {
+  "n": 78.928,
+  "dr2_mean": 0.02406714396524675,
+  "dmae_mean": 0.15678319892032092,
+  "false_null_dr2": 0.23,
+  "false_null_dmae": 0.872,
+  "ciw_dr2": 0.08159461398349452,
+  "cover_dmae_truthall": 0.45
+ },
+ "healthy|RXPhA|LassoRaw": {
+  "n": 78.928,
+  "dr2_mean": 0.0060337049477858454,
+  "dmae_mean": 0.05367498616615784,
+  "false_null_dr2": 0.434,
+  "false_null_dmae": 0.972,
+  "ciw_dr2": 0.11942257356299084,
+  "cover_dmae_truthall": 0.466
+ },
+ "healthy|RXPhA|ENres": {
+  "n": 78.928,
+  "dr2_mean": 0.02060668090557837,
+  "dmae_mean": 0.13648265308324936,
+  "false_null_dr2": 0.288,
+  "false_null_dmae": 0.88,
+  "ciw_dr2": 0.07698618184577019,
+  "cover_dmae_truthall": 0.384
+ }
+}
