@@ -2,9 +2,9 @@
 
 Analysis code, pre-registration and aggregate outputs for:
 
-> Kao H-H, Ko Y-F. Small incremental value of electrical impedance myography over sex, age and
-> body mass index for grip-strength prediction: a cross-validated study of 134 adults with and
-> without functional impairment. *(submitted to Muscle & Nerve, September 2026)*
+> Kao H-H, Ko Y-F. Electrical impedance myography for grip-strength assessment: small incremental
+> value over sex, age and body mass index in 134 adults with and without functional impairment.
+> *(manuscript under journal review, 2026; citation will be updated on publication)*
 
 Forearm electrical impedance myography (EIM; resistance and reactance at 100 kHz, four channels)
 was tested for what it adds to dominant-hand grip prediction beyond sex, age and body mass index
@@ -30,7 +30,7 @@ prediction per participant). `check_no_participant_data.py` is run before every 
 | Path | Content |
 |---|---|
 | `PREREGISTRATION_v1.1_zh-TW.md` | Pre-registration of 4 September 2026 (Chinese), including the protocol change for the validation cohort |
-| `SUPPLEMENTARY_NOTES.md` | Supplementary Notes 1–3 as submitted (pre-registration summary and deviations; reference-limit projection; residual diagnostics) |
+| `SUPPLEMENTARY_NOTES.md` | Supplementary Notes 1–4 as submitted (pre-registration summary and deviations; reference-limit projection; residual diagnostics; comparison with the published forearm EIM protocol) |
 | `analysis/02_baseline.py`, `03_subgroup.py` | Demographic baseline and the panels A/B/C comparison (Table 2 footnote: sex alone, EIM alone) |
 | `analysis/05_region_grid.py`, `06_region_grid_4sd.py` | Site × frequency grid, with and without the 4 SD rule (exploratory) |
 | `analysis/07_lowerlimb_outcomes.py` | Gait and chair-rise outcomes (untestable; reported in `outputs/09`) |
@@ -51,7 +51,7 @@ comes from the companion reference-limit repository
 
 ## Simulation study and site × frequency correspondence (methods paper, added 2026-09-06)
 
-`simulation/` holds the pre-registered simulation behind the companion methods paper (Lin & Ko, submitted to Physiological Measurement): `PREREGISTRATION_simulation_v1.4_zh-TW.md` (written before the formal runs; §6 logs the four amendments and names the superseded output files, which are retained in `simulation/outputs/`), `21_sim_calibration.py` (aggregate calibration targets from the development cohort; output `21_sim_calibration.json` contains no participant rows), `22_simulation.py` (S0 calibration, S1 redundancy, S2 group structure, S3 selection-on-outcome × redundancy × estimator × residualization), `24_sim_figures.py`, `26_site_freq_correspondence.py` (three importance methods vs the Stage 1 age effect, channel level) and `28_methods_figures.py`. Run logs with timestamps are in `simulation/outputs/`. `analysis/11_models.py` now includes tiers 1d/1e (all 72 residualized features, lasso and elastic net) and the paired contrasts.
+`simulation/` holds the pre-registered simulation behind the companion methods paper (Lin, Kao & Ko, in preparation): `PREREGISTRATION_simulation_v1.4_zh-TW.md` (written before the formal runs; §6 logs the four amendments and names the superseded output files, which are retained in `simulation/outputs/`), `21_sim_calibration.py` (aggregate calibration targets from the development cohort; output `21_sim_calibration.json` contains no participant rows), `22_simulation.py` (S0 calibration, S1 redundancy, S2 group structure, S3 selection-on-outcome × redundancy × estimator × residualization), `24_sim_figures.py`, `26_site_freq_correspondence.py` (three importance methods vs the Stage 1 age effect, channel level) and `28_methods_figures.py`. Run logs with timestamps are in `simulation/outputs/`. `analysis/11_models.py` now includes tiers 1d/1e (all 72 residualized features, lasso and elastic net) and the paired contrasts.
 
 ## Reproducing the results
 
