@@ -2,9 +2,8 @@
 
 Analysis code, pre-registration and aggregate outputs for:
 
-> Kao H-H, Ko Y-F. Electrical impedance myography for grip-strength assessment: small incremental
-> value over sex, age and body mass index in 134 adults with and without functional impairment.
-> *(manuscript under journal review, 2026; citation will be updated on publication)*
+> Kao H-H, Ko Y-F. Electrical impedance myography for grip-strength assessment: small increment over
+> demographics. *(manuscript under journal review, 2026; citation will be updated on publication)*
 
 Forearm electrical impedance myography (EIM; resistance and reactance at 100 kHz, four channels)
 was tested for what it adds to dominant-hand grip prediction beyond sex, age and body mass index
